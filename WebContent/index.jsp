@@ -5,17 +5,19 @@
 <style type="text/css">
 
 input{
-border:0px;
+	border:0px;
 }
 
 #header{
-position: relative;
-z-index:2000;
+	position: relative;
+	z-index:2000;
+	background: #efefef;
 }
-#gnb .list_nav .nav_item{
-	display: inline-block;
-	margin-left: 12px;
-	margin-right: 12px;	
+
+#gnb .gnb_inner{
+	position: relative;
+	width: 1520px;
+
 }
 
 #gnb .list_nav{
@@ -27,39 +29,66 @@ z-index:2000;
 
 }
 
-#gnb .gnb_inner{
-	position: relative;
-	width: 1300px;
+#gnb .list_nav .nav_item{
+	margin-right: 12px;
+	height: 100%;
+	display: inline-block;
 }
+
+#gnb .list_nav .nav_item.logo_area{
+	width: 120px;
+	background: yellow;	
+}
+
+#gnb .list_nav .nav{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	
+}
+
+#gnb .list_nav .nav_item.search_window{
+	width: 150px;
+	background: yellow;
+	display: inline-block;
+	border-radius:2px;	
+}
+
 
 #gnb .list_nav.normal .nav{
 	color:#03c75a;
 }
 
-
-#gnb .list_nav .nav{
-	display:block;
-	text-decoration:none;
-	
-}
-#gnb .list_nav.user_option{
-	
-}
-
-#header .list_nav.search_area.search_window{
-width:200px;
-border-radius:2px;
+#query{
+	height:100%;
 }
 
 fieldset {
-	margin:0;
-	padding:0;
+	padding-left:0;
+	padding-right:0;
+	text-align:left;
     border: 2px;
     border-style: solid;
     border-color: #19ce60;
-    
+    margin-left: 12px;
+	margin-right: 12px;
 }
 
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#header .search_area .input_text {
+	width: 150px;
+    height: 24px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
 
 </style>
 <head>
@@ -69,9 +98,9 @@ fieldset {
 <body>
 <div id="header" role="banner">
 	<div id="gnb" class>
-		<div class="list_nav logo_area">
-			<div class="nav_item">
-				<a href="#"><img width="160px" height="40px" src="logo.png"></a>
+		<div class="list_nav">
+			<div class="nav_item logo_area">
+				<a href="#"><img width="120px" height="50px" src="logo.png"></a>
 			</div>
 		</div>
 		<div class="gnb_inner">
@@ -90,38 +119,38 @@ fieldset {
 					<a href="#" class="nav">이벤트</a>
 					</li>
 				</ul>
-			</div>
 
 			<div id="search" class="list_nav search_area">
 				<form id="sform" name="sform" action="#" method="get" role="search">
 				<fieldset>
 					<div id="search_win" class="nav_item search_window">
-							<input id="query" name="query" type="text" title="검색어 입력"
+							<input id="query" name="query" size="16px" type="text" title="검색어 입력"
 								maxlength="255" class="input_text" tabindex="1" accesskey="s"
 								style="ime-mode: active;" autocomplete="off"
-								placeholder="검색어를 입력해 주세요."
+								placeholder="검색하기"
 								onclick="document.getElementById('fbm').value=1;" value=""
 								data-atcmp-element="">
 					</div>
 					<button id="nav_item search_btn" class="btn_submit" type="submit" title="검색" tabindex="3" onclick="#">검색</button> 
 				</fieldset>
-			</form>
-		</div>
+				</form>
+			</div>
 		
-			<ul class="list_nav user_option">
-				<li class="nav_item">
-				<a href="#" class="nav">장바구니</a>
-				</li>
-				<li class="nav_item">
-				<a href="#" class="nav">로그인</a>
-				</li>
-				<li class="nav_item">
-				<a href="#" class="nav">회원가입</a>
-				</li>
-				<li class="nav_item">
-				<a href="#" class="nav">마이페이지</a>
-				</li>
-			</ul>
+				<ul class="list_nav user_option">
+					<li class="nav_item">
+					<a href="#" class="nav">장바구니</a>
+					</li>
+					<li class="nav_item">
+					<a href="#" class="nav">로그인</a>
+					</li>
+					<li class="nav_item">
+					<a href="#" class="nav">회원가입</a>
+					</li>
+					<li class="nav_item">
+					<a href="#" class="nav">마이페이지</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<hr style="clear:left;">
