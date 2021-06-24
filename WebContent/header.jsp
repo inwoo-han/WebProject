@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/common_menu_style.css" type="text/css"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/header_style.css" type="text/css"/>
 <title>Insert title here</title>
 </head>
 <body>
 <div id="header" role="banner">
 	<div id="gnb" class>
 		<div class="list_nav">
-			<div class="nav_item logo_area">
-				<a href="#"><img width="120px" height="50px" src="logo.png"></a>
+			<div class="logo_area">
+				<a href="#"><img width="120px" height="120px" src="${pageContext.request.contextPath}/images/logo.png"></a>
 			</div>
 		</div>
 		<div class="gnb_inner">
@@ -35,7 +35,7 @@
 			<div id="search" class="list_nav search_area">
 				<form id="sform" name="sform" action="#" method="get" role="search">
 				<fieldset>
-					<div id="search_win" class="nav_item search_window">
+					<div id="search_win" class="search_window">
 							<input id="query" name="query" size="16px" type="text" title="검색어 입력"
 								maxlength="255" class="input_text" tabindex="1" accesskey="s"
 								style="ime-mode: active;" autocomplete="off"

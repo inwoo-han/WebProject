@@ -8,7 +8,7 @@ input{
 	position: relative;
 	z-index:2000;
 	background: #fff;
-	height:50px;
+	height:120px;
 }
 
 #gnb .gnb_inner{
@@ -27,6 +27,7 @@ input{
 }
 
 #gnb .list_nav .nav_item{
+	margin-top: 60px;
 	margin-right: 12px;
 	height: 100%;
 	display: inline-block;
@@ -43,7 +44,7 @@ input{
 	
 }
 
-#gnb .list_nav .nav_item.search_window{
+#gnb .list_nav .search_window{
 	width: 150px;
 	display: inline-block;
 	border-radius:2px;	
@@ -66,7 +67,7 @@ input{
 }
 
 fieldset {
-	margin-top: 6px;
+	margin-top: 60px;
 	padding-left:0;
 	padding-right:0;
 	text-align:left;
