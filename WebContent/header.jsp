@@ -12,23 +12,23 @@
 	<div id="gnb" class>
 		<div class="list_nav">
 			<div class="logo_area">
-				<a href="#"><img width="120px" height="120px" src="${pageContext.request.contextPath}/images/logo.png"></a>
+				<a href="index.jsp"><img width="120px" height="120px" src="${pageContext.request.contextPath}/images/logo.png"></a>
 			</div>
 		</div>
 		<div class="gnb_inner">
 			<div class="group_nav">
 				<ul class="list_nav normal">
 					<li class="nav_item">
-					<a href="#" class="nav">사진관 찾기</a>
+					<a href="search.jsp" class="nav">사진관 찾기</a>
 					</li>
 					<li class="nav_item">
 					<a href="#" class="nav">사진관 추천</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">공지사항</a>
+					<a href="notices.jsp" class="nav">공지사항</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">이벤트</a>
+					<a href="events.jsp" class="nav">이벤트</a>
 					</li>
 				</ul>
 
@@ -50,16 +50,16 @@
 		
 				<ul class="list_nav user_option">
 					<li class="nav_item">
-					<a href="#" class="nav">장바구니</a>
+					<a href="mycart.jsp" class="nav">장바구니</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">로그인</a>
+					<a href="log.jsp" class="nav">로그인</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">회원가입</a>
+					<a href="signup.jsp" class="nav">회원가입</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">마이페이지</a>
+					<a href="mypage.jsp" class="nav">마이페이지</a>
 					</li>
 				</ul>
 			</div>
